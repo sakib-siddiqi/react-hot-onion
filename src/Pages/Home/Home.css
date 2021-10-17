@@ -1,0 +1,75 @@
+@import url("../../App.css");
+.banner {
+  background: url("./bannerbackground.png");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  aspect-ratio: 24/9;
+}
+/* product image */
+.product-img {
+  max-width: 250px;
+  width: 100%;
+  aspect-ratio: 1;
+}
+.focus-red:focus {
+  box-shadow: 0 0 0 2px rgb(var(--red));
+}
+.product-tab-link {
+  color: var(--dark);
+  cursor: pointer;
+}
+
+.tab-active,
+.tab-active:active,
+.tab-active:focus {
+  border-bottom: 5px solid rgb(var(--red)) !important;
+  color: var(--dark);
+}
+.nav-tabs {
+  border: none !important;
+}
+
+.nav-tabs .nav-link {
+  color: var(--dark) !important;
+  letter-spacing: 0.05em;
+  border: none !important;
+}
+.nav-tabs .nav-link:hover {
+  color: var(--dark) !important;
+}
+.nav-tabs .nav-link.active {
+  border: 0px !important;
+  border-bottom: 4px solid rgb(var(--red)) !important;
+  color: rgb(var(--red)) !important;
+  font-weight: 600;
+}
+.product-card {
+  transition: all 0.2s;
+  border-radius: 7px;
+  cursor: pointer;
+}
+.product-card:hover {
+  box-shadow: var(--shadow) !important;
+}
+/* count buttons */
+.btns {
+  border-radius: 1000px;
+  overflow: hidden;
+  border: 1px solid #bbb;
+}
+.btns .count-btn {
+  border: none;
+  outline: none;
+  color: rgb(var(--red));
+  background: none;
+}
+.btns .count-btn:hover {
+  background: rgba(var(--red), 10%);
+}
+.btns input {
+  border: none;
+  outline: none;
+  text-align: center;
+  max-width: 60px;
+}

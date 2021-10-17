@@ -1,38 +1,104 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap");
+/* root */
+:root {
+  --red: 249, 26, 71;
+  --dark: #030303;
+  --shadow: 0 10px 25px 0px #ebebeb;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+html {
+  background: var(--dark) !important;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+* {
+  font-family: "Nunito", sans-serif !important;
+  text-decoration: none !important;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+/* colors */
+.red {
+  background: rgb(var(--red));
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.dark {
+  background: var(--dark);
+  color: white;
+}
+.text-dark {
+  color: var(--dark) !important;
+}
+/* letter spacing */
+.l-s-1 {
+  letter-spacing: 0.05em;
+}
+.l-s-2 {
+  letter-spacing: 0.1em;
+}
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* button */
+.my-btn {
+  background: rgba(var(--red), 10%) !important;
+  color: rgb(var(--red)) !important;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  border: none;
+  outline: none;
+  transition: all 0.2s;
+}
+.my-btn:hover {
+  background: rgb(var(--red)) !important;
+  color: white !important;
+}
+.user-btn {
+  background: rgb(var(--red));
+  color: white;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  border: none;
+  outline: none;
+  transition: all 0.2s;
+}
+.user-btn:hover {
+  background: rgb(var(--red), 90%) !important;
+  color: white !important;
+}
+.user-btn:active {
+  letter-spacing: 0.005rem;
+}
+.user-btn:focus {
+  background: rgb(var(--red), 90%) !important;
+  color: white !important;
+}
+/* flex */
+.start-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+.b-o-none {
+  border: none;
+  outline: none;
+}
+.start-row-center {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* login singup */
+.bg-muted {
+  background: #f5f5f5 !important;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.form-control:focus {
+  box-shadow: 0 0 0 1px rgb(167, 72, 255);
 }

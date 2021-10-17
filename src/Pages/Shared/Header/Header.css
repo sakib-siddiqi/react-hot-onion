@@ -1,0 +1,6 @@
+@import url("../../../App.css");
+.signup-btn {
+  background: rgb(var(--red));
+  color: white !important;
+  border-radius: 1000px;
+}
